@@ -9,8 +9,8 @@ class StreamEdit extends React.Component {
     this.props.fetchStream(this.props.match.params.id);
   }
 
-  onSubmit = (formvalues) => {
-    this.props.editStream(this.props.match.params.id, formvalues);
+  onSubmit = formValues => {
+    this.props.editStream(this.props.match.params.id, formValues);
   };
 
   render() {
@@ -18,12 +18,13 @@ class StreamEdit extends React.Component {
       return <div>Loading...</div>;
     }
 
-    return(
+    return (
       <div>
         <h3>Edit a Stream</h3>
         <StreamForm
-        initialValues={_.pick(this.props.stream, 'title', 'description')}
-        onSubmit={this.onSubmit} />
+          initialValues={_.pick(this.props.stream, 'title', 'description')}
+          onSubmit={this.onSubmit}
+        />
       </div>
     );
   }

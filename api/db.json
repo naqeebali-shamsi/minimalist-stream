@@ -15,18 +15,6 @@
       "description": "this change was made by PATCH",
       "userId": "105794778792122899658",
       "id": 3
-    },
-    {
-      "title": "New stream",
-      "description": "test",
-      "userId": "105794778792122899658",
-      "id": 4
-    },
-    {
-      "title": "programmatic nav",
-      "description": "test2",
-      "userId": "105794778792122899658",
-      "id": 5
     }
   ]
 }
